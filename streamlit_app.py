@@ -4,9 +4,6 @@ import requests
 import snowflake.connector
 from urllib.error import URLError
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-
 streamlit.title('My Parents\' New Healthy Diner')
 
 streamlit.header('🥑Breakfast Menu')
